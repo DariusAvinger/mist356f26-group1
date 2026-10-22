@@ -20,7 +20,7 @@ create table APPUSER (
     Email VARCHAR(100) NOT NULL,
     DateOfBirth DATE NOT NULL,
     CreationDate DATETIME2 NOT NULL default SYSDATETIME(),
-    Password VARCHAR(255) NOT NULL,                    
+    AppUserPassword VARCHAR(255) NOT NULL,                    
     constraint PK_AppUser Primary Key (UserID),
     constraint UQ_AppUser_Username UNIQUE (Username),
     constraint UQ_AppUser_Email UNIQUE (Email)
